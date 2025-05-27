@@ -1,4 +1,4 @@
-path: ../datasets/infrared
+path: ./datasets/datasets/infrared
 train: images/train
 val: images/val
 test: images/test
