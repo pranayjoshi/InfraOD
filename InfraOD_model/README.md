@@ -21,7 +21,7 @@ This folder contains the trained YOLOv11 nano model for infrared object detectio
 - **Image Size:** 336x336
 - **Augmentations:** RandAugment, Mosaic, Flip, Erasing, etc.
 - **Framework:** PyTorch
-- **Config:** See [`args.yaml`](./InfraOD_model/args.yaml)
+- **Config:** See [`args.yaml`](./args.yaml)
 
 </details>
 
@@ -33,20 +33,20 @@ Below are some of the key results and visualizations generated during model eval
 
 | Confusion Matrix | Normalized Confusion Matrix | Results Curve |
 |:---:|:---:|:---:|
-| ![Confusion Matrix](./InfraOD_model/confusion_matrix.png) | ![Normalized Confusion Matrix](./InfraOD_model/confusion_matrix_normalized.png) | ![Results](./InfraOD_model/results.png) |
+| ![Confusion Matrix](./confusion_matrix.png) | ![Normalized Confusion Matrix](./confusion_matrix_normalized.png) | ![Results](./results.png) |
 
 ### Sample Predictions
 
 | Validation Batch 0 | Validation Batch 1 | Validation Batch 2 |
 |:---:|:---:|:---:|
-| ![Val Batch 0](./InfraOD_model/val_batch0_pred.jpg) | ![Val Batch 1](./InfraOD_model/val_batch1_pred.jpg) | ![Val Batch 2](./InfraOD_model/val_batch2_pred.jpg) |
+| ![Val Batch 0](./val_batch0_pred.jpg) | ![Val Batch 1](./val_batch1_pred.jpg) | ![Val Batch 2](./val_batch2_pred.jpg) |
 
 ---
 
 <details>
 <summary><strong>📈 Training Metrics (click to expand)</strong></summary>
 
-- See [`results.csv`](./InfraOD_model/results.csv) for detailed epoch-wise metrics (loss, precision, recall, mAP, etc.).
+- See [`results.csv`](./results.csv) for detailed epoch-wise metrics (loss, precision, recall, mAP, etc.).
 - Example (final epoch):
   - **Precision:** 0.796
   - **Recall:** 0.614
@@ -59,9 +59,9 @@ Below are some of the key results and visualizations generated during model eval
 
 ## 🧩 Model Weights
 
-- **Best Model:** [`weights/best.pt`](./InfraOD_model/weights/best.pt)
-- **Last Epoch Model:** [`weights/last.pt`](./InfraOD_model/weights/last.pt)
-- **ONNX Export:** [`weights/best.onnx`](./InfraOD_model/weights/best.onnx)
+- **Best Model:** [`weights/best.pt`](./weights/best.pt)
+- **Last Epoch Model:** [`weights/last.pt`](./weights/last.pt)
+- **ONNX Export:** [`weights/best.onnx`](./weights/best.onnx)
 
 > **Note:** These files are large. Download as needed for inference or further training.
 
